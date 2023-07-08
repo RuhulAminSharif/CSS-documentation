@@ -256,4 +256,37 @@ The four links states are:
     }
 ```  
 
-**Note :** See cursor property
+**Note :** See cursor property  
+
+### CSS Lists  
+In HTML, there are two main types of lists:
+
+- unordered lists (```<ul>```) - the list items are marked with bullets
+- ordered lists (```<ol>```) - the list items are marked with numbers or letters  
+
+The CSS list properties allow you to:
+
+- Set different list item markers for ordered lists
+- Set different list item markers for unordered lists
+- Set an image as the list item marker
+- Add background colors to lists and list items
+
+list property: 
+- list-style-type
+- list-style-image
+- list-style-position: inside/outside;
+- 
+```
+    list_selector{
+        list-style-type: circle;
+        list-style-position: inside;
+    }
+
+    // To remove list's Default Settings
+    list_selector {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+```
