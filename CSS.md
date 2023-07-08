@@ -171,4 +171,89 @@ inherit - The height/width will be inherited from its parent value -->
 - outline-style: ``value``; [dotted/dashed/solid/double/groove/ridge/inset/outset/none/hidden]
 - outline-width: thin/medium/thick/value;
 - outline-color: [``value``] 
-- outline-offset: [```value```]
+- outline-offset: [```value```]  
+
+### CSS Text
+- color: value;
+- text-align: left/right/center/justify;
+- text-align-last: left/right/center/justify;
+- direction: rtl/ltr;
+- vertical-align: baseline/text-top/text-bottom/sub/super;
+- text-decoration-line: overline/underline/line-through/overline underline;
+- text-decoration-color: value;
+- text-decoration-style: value;
+- text-decoration-thickness: value;
+- text-transform: uppercase/lowercase/capitalize;
+- text-indent: value;
+- letter-spacing: value;
+- line-height: value;
+- word-spacing: value;
+- white-space: 
+- text-shadow: 
+
+```
+    selector{
+        color: red;
+        text-align: justify;
+        direction: ltr;
+        text-indent: 50px;
+    }
+
+    //to remove hyperlinek's underline
+    a{
+        text-decoration: none;
+    }
+```  
+
+### CSS Fonts
+- font-family: 
+- font-style: normal/italic/oblique;
+- font-weight: normal/lighter/bold/900;
+- font-variant: normla/small-caps;
+- font-size: 16px/1em/100%/10vw;
+- font shorthand
+
+```
+    selector{
+        font-familty: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10vw;
+    }
+```  
+
+<!-- ### CSS Icons   -->
+
+### CSS Links  
+
+The four links states are:
+- a:link - a normal, unvisited link
+- a:visited - a link the user has visited
+- a:hover - a link when the user mouses over it
+- a:active - a link the moment it is clicked
+
+**Note :**When setting the style for several link states, there are some order rules:
+
+- a:hover MUST come after a:link and a:visited
+- a:active MUST come after a:hover
+
+```
+    a:link{
+        color: red;
+        text-decoration: none;
+    }
+    a:visited{
+        color: green;
+        text-decoration: none;
+    }
+    a:hover{
+        color: hotpink;
+        text-decoration: underline;
+    }
+    a:active{
+        color: blue;
+        text-decoration: underline;
+    }
+```  
+
+**Note :** See cursor property
