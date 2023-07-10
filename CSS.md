@@ -289,4 +289,44 @@ list property:
         padding: 0;
     }
 
+```  
+
+### CSS Tables
+
+- border:
+- width:
+- border-collapse:
+- height:
+- width:
+- text-align:
+- vertical-align: 
+- padding:
+- border-bottom:
+- :hover
+- :nth-child(even/odd)
+
+For responsive table: 
+- overflow-x:auto;
+
 ```
+    table/th/tr/td/#tableid/.tableclass{
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 8px;
+    }
+    tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+    tr:hover{
+        background-color: coral;
+    }
+
+    For responsive table: 
+    <div style="overflow-x:auto;">
+        <table>
+            ...
+            ...
+        </table>
+    </div>
+```  
